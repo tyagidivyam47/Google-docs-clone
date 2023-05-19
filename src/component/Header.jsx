@@ -1,9 +1,20 @@
+import { AiOutlineStar } from "react-icons/ai";
+import { BsChatRightText } from "react-icons/bs";
+import { SiGooglemeet } from "react-icons/si";
 const Header = () => {
     return (
         <header className="flex justify-between items-center p-3 pb-1">
-            <span>LOGO</span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"><path fill="#2196f3" d="M37,45H11c-1.657,0-3-1.343-3-3V6c0-1.657,1.343-3,3-3h19l10,10v29C40,43.657,38.657,45,37,45z" /><path fill="#bbdefb" d="M40 13L30 13 30 3z" /><path fill="#1565c0" d="M30 13L40 23 40 13z" /><path fill="#e3f2fd" d="M15 23H33V25H15zM15 27H33V29H15zM15 31H33V33H15zM15 35H25V37H15z" /></svg>
+            </span>
             <div className="flex-grow px-2">
-                <h2>Untitled Document</h2>
+                <div className="flex">
+                    <h2>Untitled Document </h2>
+                    <span className="ml-6 mt-1 cursor-pointer">
+                        <AiOutlineStar />
+                    </span>
+                </div>
+
                 <div className="flex items-center text-sm space-x-1 -ml-1 h-8 text-gray-800">
                     <p className="cursor-pointer hover:bg-gray-200 transition ease-out p-2 rounded-lg ">File</p>
                     <p className="cursor-pointer hover:bg-gray-200 transition ease-out p-2 rounded-lg ">Edit</p>
@@ -13,6 +24,14 @@ const Header = () => {
                     <p className="cursor-pointer hover:bg-gray-200 transition ease-out p-2 rounded-lg ">Tools</p>
                 </div>
             </div>
+
+
+            <span className="cursor-pointer">
+                <BsChatRightText />
+            </span>
+            <span className="ml-8 mr-8 cursor-pointer">
+                <SiGooglemeet />
+            </span>
 
             <button className="hidden md:!inline-flex px-6 py-3 bg-blue-200 rounded-3xl">Share</button>
 

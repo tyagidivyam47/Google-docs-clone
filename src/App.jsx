@@ -4,12 +4,9 @@ import TextEditor from "./component/TextEditor";
 function App() {
 
   return (
-    <div>
-      <div>
-        <Header />
-        <TextEditor />
-      </div>
-
+    <div className="bg-[#F8F9FA]">
+      <Header />
+      <TextEditor />
     </div>
   )
 }
