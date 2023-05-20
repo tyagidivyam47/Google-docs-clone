@@ -8,6 +8,7 @@ const TextEditor = () => {
         toolbarClassName="flex sticky top-0 z-50 !justify-center mx-auto"
         editorClassName="mt-6 p-10 bg-white shadow-lg max-w-5xl mx-auto mb-12 border"
       />
+      {/* <div className="border-r-8 border-gray-600 h-full"></div> */}
     </div>
   )
 }

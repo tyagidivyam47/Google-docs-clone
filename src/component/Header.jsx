@@ -1,4 +1,4 @@
-import { AiOutlineStar } from "react-icons/ai";
+import { AiOutlineStar, AiOutlineLock } from "react-icons/ai";
 import { BsChatRightText } from "react-icons/bs";
 import { SiGooglemeet } from "react-icons/si";
 const Header = () => {
@@ -26,14 +26,19 @@ const Header = () => {
             </div>
 
 
-            <span className="cursor-pointer">
+            <span className="cursor-pointer hover:bg-gray-300 p-2 rounded-full transition">
                 <BsChatRightText />
             </span>
-            <span className="ml-8 mr-8 cursor-pointer">
+            <span className="ml-8 mr-8 cursor-pointer hover:bg-gray-300 p-2 rounded-full transition">
                 <SiGooglemeet />
             </span>
 
-            <button className="hidden md:!inline-flex px-6 py-3 bg-blue-200 rounded-3xl">Share</button>
+            <button className="hidden md:!inline-flex px-6 py-3 bg-blue-200 rounded-3xl text-base hover:bg-blue-300 transition">
+                <span className="mr-3 mt-1 font-bold">
+                    <AiOutlineLock />
+                </span>
+                Share
+            </button>
 
             <img
                 src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=766&q=80"
